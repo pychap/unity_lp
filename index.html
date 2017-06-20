@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PTC, Vuforia AR Platform | Unity Augmented Reality Development | AR SDK</title>
+  <meta name="author" content="Vuforia Front and Back-end team" />
+  <meta name="description" content="PTC / Unity collaboration simplifies Augmented Reality, AR development. PTC / Unity partnership integrates the Vuforia AR Platform with Unity to deliver a seamless development experience to Unity's global ecosystem." />
+  <meta name="keywords" content="PTC, Unity, Vuforia, augmented reality, AR, AR platform, AR development, AR developers, AR applications, AR app, AR app store, Vuforia apps, computer vision, real world environments, digital content, AR SDK's, cloud services, 2D platform, 3D platform, VR platform, 3D experience development software" />
+  <meta name="Resource-type" content="Document" />
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/css/jquery.fullPage.css" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+  <link rel="stylesheet" type="text/css" href="/css/video-min.css" />
+  <link rel="stylesheet" type="text/css" href="/css/animate.css" />
+  <link rel="stylesheet" type="text/css" href="/css/reveal.css" />
+   <!--[if IE]>
+    <script type="text/javascript">
+       var console = { log: function() {} };
+    </script>
+  <![endif]-->
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/scrolloverflow.js"></script>
+  <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+  <script type="text/javascript" src="js/picturefill.min.js"></script>
+  <script type="text/javascript" src="js/headroom.js"></script>
+  
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        anchors: ['firstPage', 'secondPage', '3rdPage'],
+        sectionsColor: ['#114c40', '#646464', '#394046'],
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['Video', 'Go to Mars!', 'Custom Targets']
+      });
+    });
+  </script>
+
+</head>
+<body>
+<div id="fullpage">
+  <div class="section " id="section0">
+    <header id="header" class="headroom header--fixed">
+       <container>
+         <img src="imgs/header-logos.png"
+           srcset="imgs/header-logos@2x.png 2x,
+                 imgs/header-logos@3x.png 3x"
+           class="header-logos">
+       </container>
+    </header>
+    <div class="intro">
+     <div class="pg1-container">
+
+     <!--  ************ play button desktop ********** -->
+          <div id="button-play1" class="play-button">
+             <a id="vid-modal" href="#" class="" data-reveal-id="target-vid-modal">
+                <img src="/imgs/play-button.png" class="play-button">
+             </a>
+           </div>
+      <!--  ************ play button device ********** -->
+           <div id="button-play2" class="play-button">
+              <a href="https://youtu.be/jAmU0L_wfV0" class="" target="new">
+                 <img src="/imgs/play-button.png" class="play-button">
+              </a>
+            </div>
+
+         <!--  ************ modal ********** -->
+
+         <div id="target-vid-modal" class="reveal-modal" style="top: 100px; opacity: 1; visibility: hidden;">
+                <div class="vid-container">
+                  <iframe id="unity-youtube-player" width="853" height="480" src="https://www.youtube.com/embed/jAmU0L_wfV0?rel=0&enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                </div>
+                <a class="close-reveal-modal">&#215;</a>
+          </div>
+           <div class="reveal-modal-bg" style="display: none; cursor: pointer;"></div>
+          <!-- ************ /modal end ************ -->
+     
+      <h1>New features coming soon!</h1>
+      <h2>Welcome to the premier of Vuforia in the Unity 2017.2 Beta.</h2>
+      <small>*Demo made with Google Tango</small>
+      <div class="below-video push">
+        <ul>
+          <li>New features</li>
+          <li>Improved&nbsp;performance</li>
+          <li>Streamlined workflow</li>
+        </ul>
+        <a href="#secondPage"><img src="imgs/down-arrow-1.png" alt="Down arrow for navigation"></a>
+      </div>
+
+      </div>
+
+      <!-- background video -->
+      <div class="fullscreen-bg">
+        <video id="vu-vid" poster="imgs/vid-bkg-image.jpg" class="fullscreen-bg__video" playsinline data-autoplay=""  muted="" loop="">
+            <source type="video/mp4"free src="video/Mars-Demo-Sizzle-reel-V5b.mp4" />
+            <source type="video/webm" src="video/Mars-Demo-Sizzle-reel-V5b.webm" />
+            <source type="video/ogg" src="video/Mars-Demo-Sizzle-reel-V5b.ogv" />
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="section1">
+      <div class="slide" id="slide1">
+        <section>
+         <div class="intro">
+           <div id="v-two-panel" class="two-two-col">
+           <div class="col-one">
+             <picture>
+               <!-- anything greater than 750px will show below source -->
+               <source media="(min-width: 768px)" srcset="imgs/smart-terrain-unityui.png" />
+               <!-- anything between 500 and 750px -->
+               <source media="(min-width: 569px)" srcset="imgs/smart-terrain-unityui.png" />
+               <!-- anything smaller than 569px, the below will show -->
+                 <img src="imgs/smart-terrain-unityui-sm.png" alt="Examples of targets and the Unity IDE">
+             </picture>
+           </div>
+           <div class="col-two">
+             <h1>Go to Mars!</h1>
+             <h3>The Vuforia Mars sample was inspired by NASA&rsquo;s Mars Journey missions and premiered live at the 2017 Unity Vision Summit.</h3>
+             <p>The Mars Sample demonstrates best practices for  games designed to be played in the real-world.</p>
+             <p>This sample includes rich assets and animations that you can use to create your own experiences.</p>
+             </div>
+
+           </div>
+           <div class="nav-down-arrow"><a class="arrow-img" href="#3rdPage"><img src="imgs/down-arrow-1.png" alt="Down arrow for navigation"></a></div>
+         </div>
+      </section>
+    </div>
+
+   <div class="slide" id="slide2">
+
+   </div>
+
+  </div>
+  <div class="section full-body" id="section2">
+     <div class="intro">
+      <section>
+        <div id="v-three-panel" class="three-two-col">
+          <div class="col-two">
+          <h1>Ready to deploy?</h1>
+          <p>If you want  to create targets or deploy your app get started now with Vuforia 6.2, our latest production release. We&rsquo;ll notify you when Vuforia 7 is released commercially later this year.</p>
+          
+            <p class="bt"><button type="submit">Get Vuforia 6.2</button></p>
+           
+          </div>
+           <div class="col-one">
+             <picture>
+               <!-- anything greater than 750px will show below source -->
+               <source media="(min-width: 750px)" srcset="imgs/laptop-space-gray-full.png" />
+               <!-- anything between 530 and 750px -->
+               <source media="(min-width: 530px)" srcset="imgs/laptop-space-gray-med.png" />
+               <!-- anything smaller than 530px, the below will show -->
+                 <img src="imgs/laptop-space-gray-sm.png" class="laptop showing SDK downloads page">   
+             </picture>
+           </div>
+         </div>
+        </section>
+      
+      
+    </div>
+    <footer>
+      <div class="img-txt">
+        <picture>
+          <!-- anything greater than 750px will show below source -->
+          <source media="(min-width: 1025px)" srcset="imgs/vuforia-logo.png" />
+          <!-- anything between 500 and 750px -->
+          <source media="(min-width: 500px)" srcset="imgs/vuforia-logo-sm.png" />
+          <!-- anything smaller than 500px, the below will show -->
+            <img src="imgs/vuforia-logo-sm.png" alt="vuforia logo">   
+        </picture>
+      </div>
+      <p>&copy;2017 PTC Inc. All rights reserved. Nothing in these materials is an offer to sell any of the components or devices referenced herein. PTC and Vuforia are trademarks or registered trademarks of PTC Inc. in the United States and other countries. Other products and brand names referenced may be trademarks or registered trademarks of their respective owners. Vuforia is a product of PTC Inc.</p>
+      <ul class="v-navigation">
+        <li class=""><a href="https://developer.vuforia.com/support/contact/sales">Contact Us</a></li>
+        <li class="empty">|</li>
+        <li class=""><a href="https://developer.vuforia.com/legal/tos">Terms of Use</a></li>
+        <li class="empty">|</li>
+        <li class=""><a href="https://developer.vuforia.com/legal/privacy">Privacy Policy</a></li>
+        <li class="empty">|</li>
+        <li class=""><a href="https://developer.vuforia.com/legal/cookies">Cookie Policy</a></li>
+      </ul>
+    </footer>
+  </div>
+  
+
+</div>
+<script type="text/javascript" src="js/jquery.reveal.js"></script>
+<script type="text/javascript" src="js/modernizr-custom.js"></script>
+<script>
+$(document).ready(function($) {
+  $("#header").headroom({
+    "offset": 205,
+      "tolerance": 5,
+      "classes": {
+        "initial": "animated",
+        "pinned": "slideDown",
+        "unpinned": "slideUp"
+      }
+  });
+});
+</script>
+<script> 
+    // document.getElementById('vu-vid').play();
+    $(document).ready(function($) {
+      if (Modernizr.video) {  
+        if (Modernizr.video.webm) {
+          // replace the DOM node <video> and replace it with itself but only with a .webm file as source
+          $('#vu-vid').replaceWith("<video id='video' autoplay controls src='video/Mars-Demo-Sizzle-Real-V4-premier.webm'></video>");
+        } else if (Modernizr.video.ogg) {
+          $('#vu-vid').replaceWith("<video id='video' autoplay controls src='video/Mars-Demo-Sizzle-Real-V4.ogv'></video>");
+        }
+      }
+      $('.close-reveal-modal').on('click', function() {
+          //$('#popup-youtube-player').stopVideo();
+      $('#unity-youtube-player')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');    
+      });
+    }); 
+</script> 
+
+</body>
+</html>
